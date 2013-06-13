@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* So the HTML5 structural tags work in older browsers */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
+/************Reset**************/
+
+
+/* html5doctor.com/html-5-reset-stylesheet/ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+a:-webkit-any-link {
+text-decoration: none !important;
+cursor: auto;
+}
+
+/************End Reset**************/
+
+/* elements */
+
+/* global styles */
+body {
+	background: #CECECE url("http://responsivewebdesign.com/robot/-/img/body.gif");
+	background: url("http://responsivewebdesign.com/robot/-/img/tile.png") repeat-x -2% -230px,
+		url("http://responsivewebdesign.com/robot/-/img/tile.png") repeat-x -4% 550px,
+		url("http://responsivewebdesign.com/robot/-/img/tile.png") repeat-x -8% 80%,
+		url("http://responsivewebdesign.com/robot/-/img/body.gif") repeat -50% 0,
+		#CECECE;
+	color: #303030;
+	font: normal 100%/1.5 Calibri, Candara, "Gill Sans", "Gill Sans MT", sans-serif;
+		text-decoration: none !important;
+}
+
+a {
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+	color: #D53232;
+	text-decoration: none;
+}
+
+p, ul, ol {
+	margin-bottom: 1em;
+}
+
+li {
+	text-align: -webkit-match-parent !important;
+}
+
+a:hover {
+	color: #B52A2A;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* --
+section specific styles */
+
+
+#page {
+	padding-top: 1em;
+	margin: 0 auto;
+	width: 90%;
+    zoom: 1;
+}
+
+
+/* --
+Blog section start */
+
+/* shadow attempt */
+
+.lede {
+	-moz-box-shadow: 1px -1px 0 #751910, 2px -2px 0 #751910, 3px -3px 0 #751910, 4px -4px 0 #751910, 5px -5px 0 #751910, 6px -6px 0 #751910, 7px -7px 0 #751910, 8px -8px 0 #751910, 9px -9px 0 #751910, 10px -10px 0 #751910, 11px -11px 0 #751910;
+	-webkit-box-shadow: 1px -1px 0 #751910, 2px -2px 0 #751910, 3px -3px 0 #751910, 4px -4px 0 #751910, 5px -5px 0 #751910, 6px -6px 0 #751910, 7px -7px 0 #751910, 8px -8px 0 #751910, 9px -9px 0 #751910, 10px -10px 0 #751910, 11px -11px 0 #751910;
+	box-shadow: 1px -1px 0 #751910, 2px -2px 0 #751910, 3px -3px 0 #751910, 4px -4px 0 #751910, 5px -5px 0 #751910, 6px -6px 0 #751910, 7px -7px 0 #751910, 8px -8px 0 #751910, 9px -9px 0 #751910, 10px -10px 0 #751910, 11px -11px 0 #751910;
+}
+
+.lede{
+	-moz-box-shadow: -1px -1px 0 #751910, -2px -2px 0 #751910, -3px -3px 0 #751910, -4px -4px 0 #751910, -5px -5px 0 #751910, -6px -6px 0 #751910, -7px -7px 0 #751910, -8px -8px 0 #751910, -9px -9px 0 #751910, -10px -10px 0 #751910, -11px -11px 0 #751910;
+	-webkit-box-shadow: -1px -1px 0 #751910, -2px -2px 0 #751910, -3px -3px 0 #751910, -4px -4px 0 #751910, -5px -5px 0 #751910, -6px -6px 0 #751910, -7px -7px 0 #751910, -8px -8px 0 #751910, -9px -9px 0 #751910, -10px -10px 0 #751910, -11px -11px 0 #751910;
+	box-shadow: -1px -1px 0 #751910, -2px -2px 0 #751910, -3px -3px 0 #751910, -4px -4px 0 #751910, -5px -5px 0 #751910, -6px -6px 0 #751910, -7px -7px 0 #751910, -8px -8px 0 #751910, -9px -9px 0 #751910, -10px -10px 0 #751910, -11px -11px 0 #751910;
+	}
+	
+	/* end shadow attempt */
+
+.blog {
+	margin: 0 auto;
+	width: 93.75%;
+}
+
+.main {
+	background: #F8F5F2 url(http://responsivewebdesign.com/robot/-/img/noise.gif);
+	width: 60.5%;
+	float: left;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.blog .article {
+	padding-top: 2em;
+	font-size: 0.875em;			/* 14px / 16px */
+	padding-left: 8.48056537%;
+}
+
+
+.date {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	text-align: center;
+	float: left;
+	margin-left: -17.2340425531%;
+	width: 14.68085106%;
+	background: rgba(0, 0, 0, 0.6);
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #FFF;
+	font: normal 0.857142857em/1 "league-gothic-1", "league-gothic-2", "League Gothic", "Arial Narrow", Arial, sans-serif;	/* 12px / 14px */
+	letter-spacing: 0.075em;
+	padding: 0.75em 0;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+}
+
+.date span {
+	font-size: 4em;
+	display: block;
+}
+
+.title {
+	font: bold 1.5em "pill-gothic-600mg-1", "pill-gothic-600mg-2", Calibri, Candara, "Gill Sans", "Gill Sans MT", sans-serif;		/* 15px / 14px */
+	text-transform: uppercase;
+	margin-top: .3em;
+	margin-bottom: .3em;
+	text-decoration: none !important;
+	color: orange;
+}
+
+.lede {
+	background: #751910 url("http://responsivewebdesign.com/robot/-/img/blog-title-bg.jpg");
+	color: #F9E3CC;
+	font: normal 1.25em "league-gothic-1", "league-gothic-2", "League Gothic", "Arial Narrow", Arial, sans-serif;
+	padding-top: 0.8em;
+	padding-bottom: .8em;
+	padding-left: 5.3333333%;
+	text-transform: uppercase;
+}
+
+.lede a {
+	color: #F8F5F2;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.intro {
+	font-size: 1.14285714em;
+}
+
+/* styles for meta tags */
+
+.meta {
+	border-top: 1px solid #999;
+	padding: 1em 0;
+	color: #666;
+	text-align: left;
+	list-style-type: disc;
+}
+
+.meta h1, .meta h2 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.meta ul a:hover {
+	background: #BABABA;
+	color: #FFF;
+}
+
+.meta ul a {
+	text-decoration: none;
+	background: #EEE;
+	color: #999;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	border-radius: 0.4em;
+	padding: 0.15em 0.7em;
+}
+
+.meta ul a:before {
+	content: "#";
+}
+
+.meta h2, .meta ul, .meta li {
+	display: inline;
+}
+
+.meta cite {
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+/* --  
+end blog section */
+
+
+/*  --
+start other section */
+.other {
+	background: #F8F5F2 url("http://responsivewebdesign.com/robot/-/img/noise-gray.gif");
+	float: right;
+	 width: 37%;
+	font-size: 0.875em;			/* 14px / 16px */
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+ }
+ 
+ .other .recent-entries h2 {
+		font-size:1.15em;
+	 	border-top: 1px solid #999;
+ }
+ 
+.recent-entries h2 a {
+	background: url("http://responsivewebdesign.com/robot/-/img/lines.png") no-repeat 0 0.25em;
+	display: block;
+}
+
+.recent-entries h2 a, .recent-entries p {
+	padding-left: 23px;
+}
+
+.recent-entries {
+	margin: 0 auto;
+	width: 69.7885196%;
+
+}
+
+/* end other section */
+
+
+/* --
+Begin img section */
+
+.figure {
+	background: #3b0b07;
+	border-top: .8em solid #3b0b07;
+	border-right: .8em solid #3b0b07;
+	border-left: .8em solid #3b0b07;
+	float: right;
+	margin-bottom: 0.5em;
+	margin-left: 2.53164557%;
+	margin-right: 1%;
+	width: 48.7341772%;
+	border-radius: .5em;
+	
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+b.figcaption {
+	color: #f8f5f2;
+	font-weight: bold;
+}
